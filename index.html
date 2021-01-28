@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TvSeries-Finder by Llilles</title>
+    <link rel="icon" href="./images/film-favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- title -->
+    <header role="banner" class="container__title">
+      <h1 class="title-color">
+        TV Series
+        <span class="finder">Finder</span>
+      </h1>
+      <img
+        class="icon-tv"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAMKADAAQAAAABAAAAMAAAAADbN2wMAAAB0UlEQVRoBe1ZwU0EMQw8ePEC0QArXQVUAVXwpgEkiqALnnSAKAJEBVSABB9eCGYEK62dZO1IyV0ixZK1a8eejJ1kV3u32QwZHRgdGB1osQNnIHULfYX+7FnJgVzIySVbRH1C901cz09O5GbKAyJ0cis2uQk5ENaf8YHLccTfgourcGIR0d1mkU/QpZ9AkwIqHTfDL+flvSmxBJLV54JF6RUsHUeyMT70JyWVcI0MPUafltJxek49X2CnEkpvES9eik9AfHasJUwI2vVWWuMzcxZXK6H0FrHwLD6CPA0rwbv0peIsPtkFMGGC7morrRbALmlhQssiOB+2zNTDbRTg6VLNmLECNbvrwa6xApeY+MUzea0Y/dzNtcmLjbmCvkFz8614QK6LBWCNL9GPYNxA36FWnnd8iR+99wKl4mKgp3DeQb+gqTyvP4YvfF6gVJwAU8YE+x76DU3lW34FGZoWgDUeIoaec7geoRZWbFyg1XgKiQn2YcSqzvGtcZ4w2OUW6vYQd/sY7fpFdoF9/gzNOTc5seKMia+b/xGCtSyCc/eP0VgB/FhvVQJusQL4hmxVXNy2YK9/Msk5ZLViyYncXNL1X0yuCkfQ6MDowOhAkQ78ApgWy4xnOZW4AAAAAElFTkSuQmCC"
+        title="icon-tv"
+      />
+    </header>
+    <main role="main" class="container">
+      <!-- search -->
+      <form method="GET" role="form" class="container-form">
+        <label for="text"> </label>
+        <input
+          class="inputText icon js-inputText"
+          type="text"
+          id="text"
+          placeholder="Enter your search"
+          aria-label="input-search"
+          required
+        />
+        <input
+          type="button"
+          id="button"
+          value="Search"
+          aria-label="button-search"
+          class="btn js-btn"
+        />
+
+        <input
+          type="button"
+          id="button"
+          value="Remove All"
+          aria-label="button-delete-all-favourites"
+          class="btn btn-trush js-btn-deleteAll"
+        />
+      </form>
+      <!-- results -->
+      <section class="container-results">
+        <article class="container-results__finder">
+          <h2 class="container-results__title">Results</h2>
+          <ul class="container-results__list js-searchResults"></ul>
+        </article>
+        <!-- favorites section -->
+        <aside role="complementary" class="container-favorites">
+          <h3 class="container-favorites__title">Favorites</h3>
+          <ul class="container-favorites__save js-saveFavorites"></ul>
+        </aside>
+      </section>
+    </main>
+    <footer class="footer">
+      <small class="text"> ⚙️ by Llilles 2020 </small>
+    </footer>
+    <!-- script -->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
